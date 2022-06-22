@@ -1,0 +1,48 @@
+header {
+    max-width: 1200px;
+    padding: 20px 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.header-menu a {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    padding: 10px 20px;  /* para aumentar a área de clique */
+    text-decoration: none;
+    color: #121212;
+    display: block;  /* para pegar corretamente os valores de padding */
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .header-menu a {
+        background: rgb(209, 247, 255);
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-menu a {
+        font-size: 0.8rem;
+        padding: 7px 14px;
+    }
+
+    .logo-intro h1 {
+        font-size: 1.5rem;
+    }
+}

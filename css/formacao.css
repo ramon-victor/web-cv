@@ -1,0 +1,129 @@
+.formacao {
+    background: #000000;
+    color: #ffff;
+}
+
+.formacao-container {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.formacao .subtitulo {
+    color: #141414;
+}
+
+.formacao-texto {
+    font-size: 1.4rem;
+    line-height: 1.33;
+    max-width: 55ch;
+    margin-bottom: 60px;
+    color: #a3a3a3;
+}
+
+.formacao-texto strong {
+    color: #ffff;
+}
+
+.formacao-container .faculdade {
+    background: #141414;
+    color: #a3a3a3;
+    grid-template-columns: 1fr;
+    margin: 120px 15%;
+}
+
+.formacao-container .faculdade-curso {
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+.formacao-container .empresa::before {
+    top: 51px;
+    left: -3px;
+}
+
+.formacao-container .empresa-ano {
+    top: 51px;
+    left: -80px;
+}
+
+.cursos {
+    margin-bottom: 60px;
+}
+
+.formacao-extra h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    /* necessário para posicionar o icone ao lado */
+}
+
+.formacao-extra h3::before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -36px;
+    top: -4px;
+}
+
+.formacao-extra .cursos h3::before {
+    background: url(../img/cursos-icone..svg) no-repeat center center;
+}
+
+.formacao-extra .idiomas h3::before {
+    background: url(../img/idiomas-icone.svg) no-repeat center center;
+}
+
+.formacao-extra li {
+    font-size: 1.125 rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.formacao-extra span {
+    color: #8f8f8f;
+}
+
+.cursos li {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:800px) {
+    .formacao-container {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .formacao .subtitulo {
+        color: #ffff;
+    }
+
+    .formacao-texto {
+        font-size: 1.25rem;
+    }
+
+
+    .formacao-container .empresa-ano {
+        top: 45px;
+        font-size: 0.875rem;
+        position: absolute;
+        color: #525252;
+        background: #000000;
+    }
+
+    .formacao-extra .cursos h3,
+    .formacao-extra .idiomas h3 {
+        margin-left: 24px;
+    }
+}
