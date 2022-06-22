@@ -1,7 +1,21 @@
+
+/* Estilo do scrollbar [Chrome, Edge e Safari]*/
+body::-webkit-scrollbar {
+    width: 10px
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(34, 202, 255), rgb(7, 169, 240));
+    border-radius: 4px;
+}
+/* ----------------------------------------- */
+
+
 body {
     font-family: 'Fira Sans', Arial, sans-serif;
     margin: 0px;
     color: #141414;
+    scrollbar
 }
 
 h1,
@@ -19,10 +33,12 @@ ul {
 
 .subtitulo {
     font-size: 8rem;
-    word-break: break-all; /* define a possibilidade de quebra da palavra */
+    word-break: break-all;
+    /* define a possibilidade de quebra da palavra */
     line-height: 1;
     text-transform: uppercase;
-    max-width: 4ch; /* quebra quando chegar no tamanho de 4 zeros alinhados */
+    max-width: 4ch;
+    /* quebra quando chegar no tamanho de 4 zeros alinhados */
 }
 
 @media (max-width: 800px) {
