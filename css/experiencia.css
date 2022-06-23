@@ -102,13 +102,12 @@
     }
 
     .empresa-ano {
-        width: initial;
-        order: 1;
-        /* prioridade do elemento */
+        color: #ffffff;
+        width: 8ch;
         left: 85%;
-        top: 100%;
-        background: #f5f5f5;
-        border-radius: 0px 0px 4px 4px;
+        top: 95%;
+        background: #525252;
+        border-radius: 4px;
         padding: 5px 10px;
     }
 }
@@ -117,7 +116,7 @@
 @media (max-width: 600px) {
     .empresa-ano {
         font-size: 0.8rem;
-        left: 80%;
+        left: 78%;
     }
 }
 @media (max-width: 400px) {
@@ -126,7 +125,8 @@
     }
 
     .empresa-ano {
-        font-size: 0.7rem;
-        left: 75%;
+        font-size: 0.75rem;
+        top: 95%;
+        left: 70%;
     }
 }

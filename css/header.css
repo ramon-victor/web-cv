@@ -15,12 +15,16 @@ header {
 }
 
 .header-menu a {
-    font-size: 1.125rem;
+    width: 90px;
+    font-size: 0.875rem;
     line-height: 1.3;
-    padding: 10px 20px;  /* para aumentar a área de clique */
+    padding: 5px;
+    /* para aumentar a área de clique */
     text-decoration: none;
-    color: #121212;
-    display: block;  /* para pegar corretamente os valores de padding */
+    text-align: center;
+    color: #ffff;
+    display: block;
+    /* para pegar corretamente os valores de padding */
 }
 
 @media (max-width: 800px) {
@@ -31,15 +35,15 @@ header {
     }
 
     .header-menu a {
-        background: rgb(209, 247, 255);
+        background: #525252;
         border-radius: 4px;
     }
 }
 
 @media (max-width: 500px) {
     .header-menu a {
+        width: 70px;
         font-size: 0.8rem;
-        padding: 7px 14px;
     }
 
     .logo-intro h1 {

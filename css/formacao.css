@@ -115,15 +115,38 @@
 
 
     .formacao-container .empresa-ano {
-        top: 45px;
-        font-size: 0.875rem;
-        position: absolute;
         color: #525252;
-        background: #000000;
+        width: 8ch;
+        left: 78%;
+        top: 90%;
+        background: #f5f5f5;
+        border-radius: 4px;
+        padding: 5px 10px;
     }
 
     .formacao-extra .cursos h3,
     .formacao-extra .idiomas h3 {
         margin-left: 24px;
+    }
+}
+
+@media (max-width:600px) {
+    .formacao-container .empresa-ano {
+        font-size: 0.8rem;
+        left: 70%;
+    }
+}
+
+
+
+@media (max-width:400px) {
+    .formacao-container .empresa-ano {
+        font-size: 0.75rem;
+        width: 50px;
+        left: 60%;
+        top: 90%;
+        background: #f5f5f5;
+        border-radius: 4px;
+        padding: 5px 10px;
     }
 }
