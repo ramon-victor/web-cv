@@ -31,6 +31,12 @@
 .introducao img {
     width: 100%;
     height: auto;
+    border-radius: 96px;
+}
+
+.introducao .aviso-foto {
+    font-size: 0.625rem;
+    color: #525252;
 }
 
 @media (max-width: 1000px) {
