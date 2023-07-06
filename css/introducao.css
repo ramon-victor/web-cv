@@ -28,14 +28,15 @@
 	/* posição atrás dos outros elementos da página */
 }
 
-.introducao img {
+.introducao .logo-principal img {
 	width: 100%;
 	height: auto;
 	margin: 32px 0px;
 	transition: 1s;
 }
 
-.introducao img:hover {
+.introducao .logo-principal img:hover,
+.introducao .icones-social img:hover {
 	cursor: pointer;
 	transform: scale(1.05);
 }
@@ -45,9 +46,18 @@
 	color: #525252;
 }
 
-.introducao .icones-social-container img {
-	width: 32px;
+.introducao .icones-social-container {
+	display: flex;
 	margin: 32px 0px;
+}
+
+.introducao .icones-social {
+	margin-right: 4px;
+}
+
+.introducao .icones-social img {
+	width: 32px;
+	transition: 0.5s;
 }
 
 @media (max-width: 1000px) {
@@ -86,10 +96,12 @@
 @media (max-width: 400px) {
 	.introducao {
 		grid-template-columns: 1fr;
-		margin: 0 5px;
+		margin: 0 6px;
+        padding: 16px;
 	}
 
-	.introducao img {
-		display: none;
-	}
+	.introducao .logo-principal img {
+        width: 50%;
+        margin: 0px;
+    }
 }
