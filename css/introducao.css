@@ -31,8 +31,15 @@
 .introducao img {
     width: 100%;
     height: auto;
-    border-radius: 96px;
+    margin: 32px 0px;
+    transition: 1s;
 }
+
+.introducao img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 
 .introducao .aviso-foto {
     font-size: 0.625rem;
