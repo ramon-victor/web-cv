@@ -41,11 +41,6 @@
 	transform: scale(1.05);
 }
 
-.introducao .aviso-foto {
-	font-size: 0.625rem;
-	color: #525252;
-}
-
 .introducao .icones-social-container {
 	display: flex;
 	margin: 32px 0px;
@@ -97,11 +92,11 @@
 	.introducao {
 		grid-template-columns: 1fr;
 		margin: 0 6px;
-        padding: 16px;
+		padding: 16px;
 	}
 
 	.introducao .logo-principal img {
-        width: 50%;
-        margin: 0px;
-    }
+		width: 50%;
+		margin: 0px;
+	}
 }
