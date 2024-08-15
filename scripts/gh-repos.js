@@ -1,6 +1,6 @@
 const fetchGithubRepositories = async () => {    
     try {    
-        const response = await fetch('https://api.github.com/users/ramonvc/repos?sort=updated&direction=desc&per_page=6');    
+        const response = await fetch('https://api.github.com/users/ramon-victor/repos?sort=updated&direction=desc&per_page=6');    
         const repos = await response.json();    
     
         const reposContainer = document.getElementById('repositorios-container');    
